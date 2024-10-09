@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-flow__node {
+  @apply p-2 rounded shadow-md bg-white border border-gray-200;
+}
+
+.react-flow__handle {
+  @apply w-3 h-3;
+}
+
+.move-mode {
+  cursor: grab !important;
+}
+
+.move-mode:active {
+  cursor: grabbing !important;
+}
+
+.selection-mode {
+  cursor: crosshair !important;
+}
+
+.react-flow__pane {
+  cursor: inherit !important;
+}
